@@ -128,7 +128,7 @@ export default function PageEvaluationEau() {
           onSubmit={handleSubmit}
         >
           <h2 className="text-2xl text-center my-8">
-            Évaluez votre consommation d`&apos;`eau
+            Évaluez votre consommation d;eau
           </h2>
 
           {/* Champ Nom */}
@@ -205,7 +205,7 @@ export default function PageEvaluationEau() {
               htmlFor="response"
               className="block text-lg font-bold text-[#003366]"
             >
-              Comment pouvez-vous économiser de l`&apos;`eau chez vous ?
+              Comment pouvez-vous économiser de l;eau chez vous ?
             </label>
             <p className="text-sm text-gray-500 italic mb-2">
               Indice : Une action simple mentionnée sur ce site.
@@ -226,7 +226,7 @@ export default function PageEvaluationEau() {
             ) : (
               answer && (
                 <p className="text-red-500">
-                  Ce n`&apos;`est pas la réponse attendue !
+                  Ce n;est pas la réponse attendue !
                 </p>
               )
             )}
@@ -247,7 +247,7 @@ export default function PageEvaluationEau() {
             </button>
             {!canSubmit && (
               <p className="mt-2 text-sm text-center text-gray-700 italic">
-                Arrêtez l`&apos;`eau d`&apos;`abord !
+                Arrêtez l;eau d&apos;abord !
               </p>
             )}
           </div>
