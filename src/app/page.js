@@ -7,6 +7,9 @@ import DiceRoller from "@/components/DiceRoller"; // Importation du composant Di
 import { useRouter } from "next/navigation";
 
 export default function PageEvaluationEau() {
+  const f = 10; // Move the initialization above its usage
+  console.log(f); // No more ReferenceError
+
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
