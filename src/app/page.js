@@ -255,29 +255,28 @@ export default function PageEvaluationEau() {
       </main>
 
       {/* Bouton Robinet */}
-      {clickCount <
-        2(
-          <div
-            className={`flex justify-center items-center mt-8 fixed ${
-              buttonPosition === "bottom-left"
-                ? "left-8 bottom-8"
-                : "right-8 bottom-8"
-            }`}
+      {clickCount < 2 && (
+        <div
+          className={`flex justify-center items-center mt-8 fixed ${
+            buttonPosition === "bottom-left"
+              ? "left-8 bottom-8"
+              : "right-8 bottom-8"
+          }`}
+        >
+          <button
+            onClick={handleFaucetClick}
+            disabled={!isFormComplete && !isAnswerCorrect} // Désactive si le formulaire est incomplet
+            className="p-4 bg-blue-600 text-white rounded-full shadow-md flex items-center justify-center"
+            title={
+              !isFormComplete
+                ? "Vous devez remplir les champs manquants avant de continuer."
+                : ""
+            }
           >
-            <button
-              onClick={handleFaucetClick}
-              disabled={!isFormComplete && isAnswerCorrect} // Désactive si le formulaire est incomplet
-              className="p-4 bg-blue-600 text-white rounded-full shadow-md flex items-center justify-center"
-              title={
-                !isFormComplete
-                  ? "Vous devez remplir les champs manquants avant de continuer."
-                  : ""
-              }
-            >
-              <Image src={robinet} alt="robinet" width={30} height={30} />
-            </button>
-          </div>
-        )}
+            <Image src={robinet} alt="robinet" width={30} height={30} />
+          </button>
+        </div>
+      )}
     </div>
   );
 }
