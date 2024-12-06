@@ -25,12 +25,12 @@ export default function ResultPage() {
       {parseInt(shower) > 15 ? (
         <p className="text-sm text-gray-500 italic mb-2">
           Vous avez dépassé les 15 minutes sous la douche. Vous consommez
-          beaucoup de l'eau il faut diminuer !!!!
+          beaucoup de l`&apos;`eau il faut diminuer !!!!
         </p>
       ) : (
         <p className="text-sm text-gray-500 italic mb-2">
           Vous avez respecté les 15 minutes sous la douche. Vous pouvez aller
-          boire un peu plus de l'eau!
+          boire un peu plus de l`&apos;`eau!
         </p>
       )}
     </div>
